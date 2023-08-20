@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hair Therapy </title>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   
+   <style>
+	 *{
+		  font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	  }
+	   @media (max-width: 768px) {
+    /* Adjust padding and font size for mobile devices */
+    .navbar-nav {
+        padding-top: 10px;
+    }
+    .navbar-nav .nav-item {
+        padding: 10px;
+    }
+    .navbar-toggler {
+        margin: 10px;
+    }
+}
+.blur-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-image:url("images/240_F_629350616_IjXCgCqtx0Q3j1tmS40RLXUq9Yo0PhAZ.jpg"); /* Replace with your image path */
+ 
+  filter: blur(7px); /* Adjust blur intensity as needed */
+}
+	 
+	.container-1 {
+  
+  width: 100%;
+  z-index: 1;
+  margin-top: 10%;
+  color: ghostwhite;
+}
+
+.row {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.row.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.footer-col-2{
+	flex: 1;
+	text-align: center;
+}
+.footer-col-2 img{
+	background:hsla(0,1%,39%,1.00);
+	top: 0;
+	width: 200px;
+	height: 200px;
+	
+}
+.footer-col-4{
+	flex-basis: 12%;
+	
+}
+ul{
+	list-style-type: none;
+}
+.app-logo{
+	margin-top: 20px;
+}
+.app-logo img{
+	width: 140px;
+}
+.footer p{
+	color: lightgoldenrodyellow;
+}
+.footer h3{
+	color: lightgoldenrodyellow;
+	margin-bottom: 20px;
+}
+.footer-col-1, .footer-col-2, .footer-col-4{
+	min-width: 33.333%;
+	margin-bottom: 20px;
+}</style>
+	
+	
+			<script>
+	document.addEventListener("DOMContentLoaded", function () {
+  const animatedTexts = document.querySelectorAll(".row");
+
+  function animateTexts() {
+    animatedTexts.forEach((text, index) => {
+      setTimeout(() => {
+        text.classList.add("show");
+      }, index * 500); // Adjust the delay as needed
+    });
+  }
+
+  animateTexts();
+});
+
+</script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-secondary fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="images/hair-removebg-preview.png" width="156" height="129"></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto ">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="servies.html">Services</a>
+                    </li>
+					<li class="nav-item">
+                        <a class="nav-link" href="Treatments.html">Treatments</a>
+                    </li>
+					<li class="nav-item">
+                        <a class="nav-link" href="Testimonials.html">Testimonials</a>
+						
+                    </li>
+					<li class="nav-item">
+                        <a class="nav-link" href="Blog.html">Blog</a>
+                    </li>
+					<li class="nav-item">
+                        <a class="nav-link" href="Contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+      </div>
+    </nav>
+
+    
+
+    
+		<div class="blur-background"></div>
+        <div class="container container-1" >
+			
+            <h2 class="text-center mb-4">&nbsp;</h2>
+            <h2 class="text-center mb-4">About Us</h2>
+			Welcome to Arrow Hair Therapy Center..! We're dedicated to bringing you the finest and most advanced solutions for all your hair care needs. Our mission is to help you achieve and maintain healthy, vibrant, and beautiful hair that boosts your confidence and enhances your natural beauty.
+			<h2 class="text-center mb-4">&nbsp;</h2>
+			
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>Our Story</h4>
+                    <p>At Arrow Hair Therapy Center, we understand that your hair is an integral part of your identity and self-expression. Our journey began with a passion for helping individuals regain control over their hair health. Years of research and experience have led us to develop a comprehensive approach to hair therapy that combines science, technology, and holistic care.</p>
+					<h4>Our Approach</h4>
+                    <p>
+                     Our approach to hair therapy is centered around personalized care. We recognize that each person's hair is unique, and therefore, their hair care journey should be tailored to their specific needs. Whether you're dealing with hair loss, scalp issues, thinning hair, or simply want to improve the overall health and appearance of your hair, we're here to guide you every step of the way.</p>
+					
+					<h4>Our Commitment</h4>
+                     <p>At Arrow Hair Therapy Center, we are committed to delivering exceptional results while prioritizing your comfort and well-being. Our team of experienced professionals is dedicated to staying up-to-date with the latest advancements in hair care and therapy, ensuring that you receive the best possible care.
+
+                     Join us on a journey to rediscover the beauty and vitality of your hair. Book a consultation today and take the first step towards healthier, more beautiful hair. Let us be your partners in achieving the hair you've always dreamed of.</p>
+                </div>
+              <div class="col-md-6">
+                <h4>Services</h4>
+
+                <p>1.Hair Analysis: Our experts utilize cutting-edge technology to perform in-depth hair and scalp analyses. This helps us understand the root causes of your hair concerns and allows us to design a customized treatment plan.
+                *</p>
+                   <p>2.Customized Treatments: Based on the results of your analysis, we create personalized treatment plans that may include advanced therapies, nourishing treatments, and targeted solutions to address your unique hair needs.                     </p>
+                   <p>3.Hair Restoration: For those dealing with hair loss, we offer a range of innovative hair restoration techniques, including PRP therapy, laser treatments, and more. Our goal is to promote natural hair regrowth and improve hair density.                     </p>
+                   <p>4.Scalp Health: A healthy scalp is the foundation for strong and beautiful hair. Our scalp treatments focus on maintaining optimal scalp health through gentle exfoliation, cleansing, and nourishment.                     </p>
+                   <p>5.Hair Care Education: We believe that knowledge is empowering. We educate our clients about proper hair care practices, lifestyle factors that impact hair health, and ways to maintain the results of our therapies. </p>
+                </div>
+            </div>
+        </div>
+    
+
+    
+
+    <footer class="bg-dark text-white text-center py-3  ">
+			
+			<div class="row">
+				<div class="footer-col-1">
+					<h3>Download Our App</h3>
+					<p>Download App for Android and ios mobile phone.</p>
+					<div class="app-logo">
+						<img src="images/app-store.png">
+						<img src="images/play-store.png">
+					</div>
+				</div>
+				<div class="footer-col-2">
+					<img src="images/hair-removebg-preview.png" width="247" height="233">
+				</div>
+				<div class="footer-col-4">
+					<h3>Follow us</h3>
+					<ul>
+						<li>Facebook</li>
+						<li>Twitter</li>
+						<li>Instagram</li>
+						<li>Youtube</li>
+					</ul>
+				</div>
+			</div>
+			
+		
+        <p>&copy; 2023 Arrow Hair Therapy . All Rights Reserved.</p>
+    </footer>
+
+   
+</body>
+</html>

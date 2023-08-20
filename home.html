@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hair Therapy </title>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   
+    <style>
+	 *{
+		  font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	  }
+@media (max-width: 768px) {
+    /* Adjust padding and font size for mobile devices */
+    .navbar-nav {
+        padding-top: 10px;
+    }
+    .navbar-nav .nav-item {
+        padding: 10px;
+    }
+    .navbar-toggler {
+        margin: 10px;
+    }
+}
+
+
+.blur-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-image:url("images/15_20200911132604_8443953_large.jpg"); /* Replace with your image path */
+  filter: blur(7px); /* Adjust blur intensity as needed */
+}
+		
+
+.welcome-container {
+  text-align: center;
+  z-index: 1;
+  margin: 25%;
+  color: antiquewhite;
+}
+
+.animated-text {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.animated-text.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+.btn-1{
+width: 60%;
+display: inline-block;
+padding: 8px 30px;
+border-radius: 30px;
+text-align: center;
+text-decoration: none;
+	color: antiquewhite;
+}
+		.discount {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #FF5733;
+            animation: pulse 1s infinite alternate;
+        }
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            100% {
+                transform: scale(1.1);
+            }
+        }
+
+.footer-col-2{
+	flex: 1;
+	text-align: center;
+}
+.footer-col-2 img{
+	background:hsla(0,1%,39%,1.00);
+	top: 0;
+	width: 200px;
+	height: 200px;
+	
+}
+.footer-col-4{
+	flex-basis: 12%;
+	
+}
+ul{
+	list-style-type: none;
+}
+.app-logo{
+	margin-top: 20px;
+}
+.app-logo img{
+	width: 140px;
+}
+.footer p{
+	color: lightgoldenrodyellow;
+}
+.footer h3{
+	color: lightgoldenrodyellow;
+	margin-bottom: 20px;
+}
+.footer-col-1, .footer-col-2, .footer-col-4{
+	min-width: 33.333%;
+	margin-bottom: 20px;
+}</style>
+		<script>
+	document.addEventListener("DOMContentLoaded", function () {
+  const animatedTexts = document.querySelectorAll(".animated-text");
+
+  function animateTexts() {
+    animatedTexts.forEach((text, index) => {
+      setTimeout(() => {
+        text.classList.add("show");
+      }, index * 500); // Adjust the delay as needed
+    });
+  }
+
+  animateTexts();
+});
+
+</script>
+	
+</head>
+<body class="new">
+    <nav class="navbar navbar-expand-lg navbar-light bg-secondary fixed-top">
+        <div class="container">
+             <a class="navbar-brand" href="#"><img src="images/hair-removebg-preview.png" width="156" height="129"></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto ">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="servies.html">Services</a>
+                    </li>
+					<li class="nav-item">
+                        <a class="nav-link" href="Treatments.html">Treatments</a>
+                    </li>
+					<li class="nav-item">
+                        <a class="nav-link" href="Testimonials.html">Testimonials</a>
+						
+                    </li>
+					<li class="nav-item">
+                        <a class="nav-link" href="Blog.html">Blog</a>
+                    </li>
+					<li class="nav-item">
+                        <a class="nav-link" href="Contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+       
+	   
+   <div class="blur-background"></div>
+   <div class="welcome-container">
+    <b><h1 class="animated-text">Welcome To Our</h1></b>
+    <b><h2 class="animated-text">Arrow Hair Therapy</h2></b>
+	   <b><p class="animated-text">Get a <span class="discount">10% discount</span> on your booking!</p></b>
+	<b><h2 class="animated-text"><a class="btn-1 bg-dark" href="Treatments.html">BOOK NOW</a></h2></b>
+	  
+  </div>
+    
+
+    
+
+    <footer class="bg-dark text-white text-center py-3  ">
+			
+			<div class="row">
+				<div class="footer-col-1">
+					<h3>Download Our App</h3>
+					<p>Download App for Android and ios mobile phone.</p>
+					<div class="app-logo">
+						<img src="images/app-store.png">
+						<img src="images/play-store.png">
+					</div>
+				</div>
+				<div class="footer-col-2">
+					<img src="images/hair-removebg-preview.png" width="247" height="233">
+				</div>
+				<div class="footer-col-4">
+					<h3>Follow us</h3>
+					<ul>
+						<li>Facebook</li>
+						<li>Twitter</li>
+						<li>Instagram</li>
+						<li>Youtube</li>
+					</ul>
+				</div>
+			</div>
+			
+		
+        <p>&copy; 2023 Arrow Hair Therapy . All Rights Reserved.</p>
+    </footer>
+
+  
+	
+</body>
+</html>

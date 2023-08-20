@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hair Therapy </title>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+	 *{
+		  font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	  }
+		@media (max-width: 768px) {
+    /* Adjust padding and font size for mobile devices */
+    .navbar-nav {
+        padding-top: 10px;
+    }
+    .navbar-nav .nav-item {
+        padding: 10px;
+    }
+    .navbar-toggler {
+        margin: 10px;
+    }
+}
+				.blur-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-image:url("images/240_F_629350616_IjXCgCqtx0Q3j1tmS40RLXUq9Yo0PhAZ.jpg"); /* Replace with your image path */
+ 
+  filter: blur(7px); /* Adjust blur intensity as needed */
+}
+	 
+	.container-1 {
+  
+  width: 100%;
+  z-index: 1;
+  margin-top: 5%;
+  color: ghostwhite;
+}
+		.animated-text {
+  opacity: 0;
+  transform: translateX(20px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.animated-text.show {
+  opacity: 1;
+  transform: translateZ(0);
+}
+		.feedback{
+	padding-top: 100px;
+}
+.feedback .col-lg-4{
+	text-align: center;
+	align-content: center;
+	background: hsla(0,2%,75%,1.00);
+	padding: 40px 20px;
+	box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+	border-radius: 30px;
+	margin-bottom: 30px;
+	margin-left: 2px;
+	
+}
+.feedback .col-lg-4 img{
+	width: 50px;
+	height: 70px;
+	margin-top: 20px;
+	border-radius: 50%;
+}
+.col-lg-4 p{
+	font-size: 15px;
+	color:snow;
+}
+.feedback .col-lg-4 h3{
+	font-weight: 600;
+	color: black;
+	font-size: 20px;
+}
+		.row{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.footer-col-2{
+	flex: 1;
+	text-align: center;
+}
+.footer-col-2 img{
+	background:hsla(0,1%,39%,1.00);
+	top: 0;
+	width: 200px;
+	height: 200px;
+	
+}
+.footer-col-4{
+	flex-basis: 12%;
+	
+}
+ul{
+	list-style-type: none;
+}
+.app-logo{
+	margin-top: 20px;
+}
+.app-logo img{
+	width: 140px;
+}
+.footer p{
+	color: lightgoldenrodyellow;
+}
+.footer h3{
+	color: lightgoldenrodyellow;
+	margin-bottom: 20px;
+}
+.footer-col-1, .footer-col-2, .footer-col-4{
+	min-width: 33.333%;
+	margin-bottom: 20px;
+}</style>
+		
+			<script>
+	document.addEventListener("DOMContentLoaded", function () {
+  const animatedTexts = document.querySelectorAll(".animated-text");
+
+  function animateTexts() {
+    animatedTexts.forEach((text, index) => {
+      setTimeout(() => {
+        text.classList.add("show");
+      }, index * 500); // Adjust the delay as needed
+    });
+  }
+
+  animateTexts();
+});
+				</script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-secondary fixed-top">
+        <div class="container">
+           <a class="navbar-brand" href="#"><img src="images/hair-removebg-preview.png" width="156" height="129"></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto ">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="servies.html">Services</a>
+                    </li>
+					<li class="nav-item">
+                        <a class="nav-link" href="Treatments.html">Treatments</a>
+                    </li>
+					<li class="nav-item">
+                        <a class="nav-link active" href="Testimonials.html">Testimonials</a>
+						
+                    </li>
+					<li class="nav-item">
+                        <a class="nav-link" href="Blog.html">Blog</a>
+                    </li>
+					<li class="nav-item">
+                        <a class="nav-link" href="Contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<div class="blur-background"></div>
+	<div class="feedback">
+		
+        <div class="container container-1" >
+			<div class="row">
+				<div class="col-lg-4 animated-text">
+					<p>I LOVE MY HAIR!!!! From my first phone call, I was completely at ease. The staff is so friendly and professional. I don’t know why I waited so long to do something. I finally have a head of hair that I love. excellent customer service further added to my satisfaction. Thank you.<br>★★★★★</p>
+					<img src="images/pexels-photo-220453.webp">
+					<h3>KALAI</h3>
+				</div>
+				<div class="col-lg-4 animated-text">
+					<p>They do an absolutely fabulous job on your hair. Their hairpieces are totally unrecognizable even by looking closely. Even my dermatologist while examining my scalp did not know I was wearing a hairpiece.. Thank you.<br>★★★★★</p>
+					<img src="images/Kayla-Person.jpg">
+					<h3>HARISHKA</h3>
+				</div>
+                <div class="col-lg-4 animated-text">
+					<p>The Center is discreet with friendly, supportive personalities attending the Client, leaving you feeling very comfortable and encouraged. Thank you.<br>★★★★★</p>
+					<img src="images/istockphoto-1200677760-612x612.jpg">
+					<h3>SENTHU</h3>
+				</div>
+                <div class="col-lg-4 animated-text">
+					<p>The user-friendly website, extensive product range, and smooth checkout process made my shopping experience a breeze. Your prompt delivery and excellent customer service further added to my satisfaction. Thank you.<br>★★★★★</p>
+					<img src="images/60638401_1.jpg">
+					<h3>SIYAM</h3>
+				</div>
+				<div class="col-lg-4 animated-text">
+					<p>Timely &. professional, easy to access with parking, staff are very knowledgable &. efficient, great service understanding my needs, thank you Hair Professionals!Thank you.<br>★★★★★</p>
+					<img src="images/Unknown.jpeg">
+					<h3>YUKESH</h3>
+				</div>
+				<div class="col-lg-4 animated-text">
+					<p>Very professional, courteous, and efficient staff. Pleasing atmosphere and great products. Couldn't ask for more!. Thank you.<br>★★★★★</p>
+					<img src="images/images.jpeg">
+					<h3>SHAMINI</h3>
+				</div>
+			</div>
+		</div>
+	</div>
+    
+
+    
+
+    
+
+    <footer class="bg-dark text-white text-center py-3  ">
+			
+			<div class="row">
+				<div class="footer-col-1">
+					<h3>Download Our App</h3>
+					<p>Download App for Android and ios mobile phone.</p>
+					<div class="app-logo">
+						<img src="images/app-store.png">
+						<img src="images/play-store.png">
+					</div>
+				</div>
+				<div class="footer-col-2">
+					<img src="images/hair-removebg-preview.png" width="247" height="233">
+				</div>
+				<div class="footer-col-4">
+					<h3>Follow us</h3>
+					<ul>
+						<li>Facebook</li>
+						<li>Twitter</li>
+						<li>Instagram</li>
+						<li>Youtube</li>
+					</ul>
+				</div>
+			</div>
+			
+		
+        <p>&copy; 2023 Arrow Hair Therapy . All Rights Reserved.</p>
+    </footer>
+
+   
+</body>
+</html>

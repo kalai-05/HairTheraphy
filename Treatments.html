@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Hair Therapy</title>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+	 *{
+		  font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	  }
+		@media (max-width: 768px) {
+    /* Adjust padding and font size for mobile devices */
+    .navbar-nav {
+        padding-top: 10px;
+    }
+    .navbar-nav .nav-item {
+        padding: 10px;
+    }
+    .navbar-toggler {
+        margin: 10px;
+    }
+}
+			  center{
+		  color:#000000;
+		  margin-top: 14%;
+	  }
+
+ .blur-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-image:url("images/240_F_629350616_IjXCgCqtx0Q3j1tmS40RLXUq9Yo0PhAZ.jpg"); /* Replace with your image path */
+ 
+  filter: blur(7px); /* Adjust blur intensity as needed */
+}
+	 
+	.welcome-container {
+  text-align: center;
+  width: 50%;
+  z-index: 1;
+  color: whitesmoke;
+}
+		.welcome-container h2{
+			color: steelblue;
+			text-shadow:20px 20px 30px white;
+		}
+.animated-text {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.animated-text.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+	  .new{
+		
+		  display: flex;
+		  margin-bottom: 3%;
+	  }
+	  .btn{
+		  font-size:30px;
+		  background: hsla(354,5%,42%,1.00);
+		  border-radius: 20px;
+		  width: 75%;
+	  }
+	  .btn:hover{
+		  cursor: pointer;
+		  transition: 1s;
+		  color: antiquewhite;
+		  background: hsla(359,72%,87%,1.00);
+	  }
+.footer-col-2{
+	flex: 1;
+	text-align: center;
+}
+.footer-col-2 img{
+	background:hsla(0,1%,39%,1.00);
+	top: 0;
+	width: 200px;
+	height: 200px;
+	
+}
+.footer-col-4{
+	flex-basis: 12%;
+	
+}
+ul{
+	list-style-type: none;
+}
+.app-logo{
+	margin-top: 20px;
+}
+.app-logo img{
+	width: 140px;
+}
+.footer p{
+	color: lightgoldenrodyellow;
+}
+.footer h3{
+	color: lightgoldenrodyellow;
+	margin-bottom: 20px;
+}
+.footer-col-1, .footer-col-2, .footer-col-4{
+	min-width: 33.333%;
+	margin-bottom: 20px;
+}</style>
+	<script>
+	document.addEventListener("DOMContentLoaded", function () {
+  const animatedTexts = document.querySelectorAll(".animated-text");
+
+  function animateTexts() {
+    animatedTexts.forEach((text, index) => {
+      setTimeout(() => {
+        text.classList.add("show");
+      }, index * 500); // Adjust the delay as needed
+    });
+  }
+
+  animateTexts();
+});
+
+</script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-secondary fixed-top">
+        <div class="container">
+             <a class="navbar-brand" href="#"><img src="images/hair-removebg-preview.png" width="156" height="129"></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto ">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="servies.html">Services</a>
+                    </li>
+					<li class="nav-item">
+                        <a class="nav-link active" href="Treatments.html">Treatments</a>
+                    </li>
+					<li class="nav-item">
+                        <a class="nav-link" href="Testimonials.html">Testimonials</a>
+						
+                    </li>
+					<li class="nav-item">
+                        <a class="nav-link" href="Blog.html">Blog</a>
+                    </li>
+					<li class="nav-item">
+                        <a class="nav-link" href="Contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+	
+ 
+	
+
+	
+	<div class="blur-background"></div>	
+	<center>
+    <div class="new container">
+	<div class="welcome-container "><b><h1 class="animated-text "><img src="images/11.jpg" width="372" height="269"></h1></b>
+ 
+	</div>
+	
+		<div class="welcome-container ">
+    <b><h2 class="animated-text  ">HAIR TRANSPLANT</h2></b>
+			<h4><p class="animated-text ">Hair transplant surgery is a procedure used to treat hair loss. Various techniques are available, but all hair transplants involve taking hair-bearing skin from one part of the scalp and grafting these pieces of skin onto bald or thinning areas of the scalp or areas of trauma.</p></h4>
+			<a href="#" class="btn animated-text ">BooK Appointment</a>
+	</div>
+	</div>
+<div class="new container">
+		<div class="welcome-container">
+    <b><h2 class="animated-text underline ">HOT OIL TREATMENT</h2></b>
+			<h4><p class="animated-text ">
+A hot oil treatment consists of coating the hair with a plant based oil that has been warmed up, with the purpose of adding extra nutrients to the strands, sealing the cuticles, protecting the strands, and strengthening the hair</p></h4>
+			<a href="#" class="btn animated-text ">BooK Appointment</a>
+	</div>
+	<div class="welcome-container"><b>
+	<h1 class="animated-text"><img src="images/03.jpeg" width="381" height="288"></h1></b>
+ 
+	</div>
+	</div>
+<div class="new container">
+	<div class="welcome-container"><b><h1 class="animated-text"><img src="images/08.jpeg" width="381" height="288"></h1></b>
+ 
+	</div>
+	
+		<div class="welcome-container">
+    <b><h2 class="animated-text underline ">HAIR DETOX TREATMENT</h2></b>
+			<h4><p class="animated-text ">Think of a hair detox as a zingy ginger shot for your locks. It flushes out the bad stuff — pollution, product buildup, excess oil, and so forth — and creates a clean slate for hair to reap the maximum reward from your hair products. For best results, a hair detox should be a multistep process in salon.</p></h4>
+			<a href="#" class="btn animated-text ">BooK Appointment</a>
+	</div>
+	</div>
+		<div class="new container">
+		<div class="welcome-container">
+    <b><h2 class="animated-text underline ">RELAX TREATMENT</h2></b>
+			<h4><p class="animated-text ">
+Relaxation therapy refers to a number of techniques designed to teach someone to be able to relax voluntarily. These techniques can include special breathing practices and progressive muscle relaxation exercises, which are designed to reduce physical and mental tension.</p></h4>
+			<a href="#" class="btn animated-text ">BooK Appointment</a>
+	</div>
+	<div class="welcome-container"><b>
+	<h1 class="animated-text"><img src="images/09.jpeg" width="381" height="288"></h1></b>
+ 
+	</div>
+	</div>
+		
+		<div class="new container">
+	<div class="welcome-container"><b><h1 class="animated-text"><img src="images/08.jpeg" width="381" height="288"></h1></b>
+ 
+	</div>
+	
+		<div class="welcome-container">
+    <b><h2 class="animated-text underline ">MOISTURE TREATMENT</h2></b>
+			<h4><p class="animated-text ">The Moisture Treatment deeply hydrates the hair strand from root to end It adds silkiness, malleability, and smoothness. Its soothing, moisture-locking formulation is made with glacial water, pro-vitamin B5, sweet almond, grapeseed, olive, and coconut oils. It contains a combination of lavender and lemon essential oils that give it its scent.</p></h4>
+			<a href="#" class="btn animated-text ">BooK Appointment</a>
+	</div>
+	</div>
+	</center>
+
+
+    
+
+    
+
+    <footer class="bg-dark text-white text-center py-3  ">
+			
+			<div class="row">
+				<div class="footer-col-1">
+					<h3>Download Our App</h3>
+					<p>Download App for Android and ios mobile phone.</p>
+					<div class="app-logo">
+						<img src="images/app-store.png">
+						<img src="images/play-store.png">
+					</div>
+				</div>
+				<div class="footer-col-2">
+					<img src="images/hair-removebg-preview.png" width="247" height="233">
+				</div>
+				<div class="footer-col-4">
+					<h3>Follow us</h3>
+					<ul>
+						<li>Facebook</li>
+						<li>Twitter</li>
+						<li>Instagram</li>
+						<li>Youtube</li>
+					</ul>
+				</div>
+			</div>
+			
+		
+        <p>&copy; 2023 Arrow Hair Therapy . All Rights Reserved.</p>
+    </footer>
+
+   
+</body>
+</html>
